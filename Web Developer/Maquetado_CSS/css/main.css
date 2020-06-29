@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto+Slab:wght@400;500&family=Roboto:wght@300&display=swap');
+
 body {
+  font-family: 'Roboto Mono', monospace;
   margin: 0px;
   padding: 0px;
   position: fixed;
@@ -53,9 +56,59 @@ nav .nav-logo-container {
   margin-left: 55px;
 }
 
+nav .nav-logo-container img {
+  width: 225px;
+  margin-top: 15px;
+}
+
 nav .profile-link {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   margin-right: 55px;
+}
+
+nav .profile-link a {
+  color: black;
+  border-bottom: 1px solid black;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%;
+  background-image: url('../assets/Cover.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.home-main section {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 360px;
+  margin-top: 85px;
+}
+
+.home-main-text {
+  font-size: 30px;
+  font-weight: 700px;
+  letter-spacing: 10px;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto mono, monospace';
+}
+
+.home-main-buttom {
+  width: 110px;
+  height: 50px;
+  background: #47cfac;
+  display: grid;
+  align-items: center;
+}
+
+.home-main-buttom a {
+  font-weight: 700px;
+  font-size: 18px;
 }
